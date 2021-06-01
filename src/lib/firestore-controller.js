@@ -16,7 +16,7 @@ export const addPost = (textPost, id, mail, userImage) => db.collection('posts')
   .add({
     post: textPost,
     idUser: id,
-    userImage: userImage,
+    userImage,
     email: mail,
     timePost: new Date().toLocaleString('GMT-0500'),
     likes: [],

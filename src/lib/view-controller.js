@@ -74,7 +74,7 @@ export const signInWithEmail = () => {
 export const dataPost = (textPost) => {
   if (textPost && textPost !== '') {
     const user = currentUser();
-    console.log("uu1",user);
+    // console.log("uu1",user);
     addPost(textPost, user.uid, user.email, user.photoURL);
   }
 };
@@ -82,7 +82,7 @@ export const dataPost = (textPost) => {
 export const dataDescription = () => {
   const user = currentUser();
   const textPost = document.querySelector('#textareaDescription').value;
-  console.log("uu2",user);
+  // console.log("uu2",user);
   addPost(textPost, user.uid, user.nickName, user.photoURL);
 };
 // Cerrar Sesión

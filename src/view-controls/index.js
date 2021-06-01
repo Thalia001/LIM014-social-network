@@ -25,7 +25,7 @@ const changeView = (route) => {
           userImage.src = userPhoto != null ? userPhoto : '../img/avatar.png';
           userImage.style.width = '50px';
         } else {
-          console.log('No encontrado');
+          // console.log('No encontrado');
         }
       });
       break;
@@ -55,7 +55,7 @@ const changeView = (route) => {
             userImagePost[i].src = userPhoto != null ? userPhoto : '../img/avatar.png';
           }
         } else {
-          console.log('No encontrado');
+          // console.log('No encontrado');
         }
       });
       break;

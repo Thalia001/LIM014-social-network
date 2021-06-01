@@ -2,8 +2,6 @@
 import { dataPost, signOutUser, perfilPageUser } from '../lib/view-controller.js';
 // eslint-disable-next-line import/no-cycle
 import { showPost, setupPosts } from '../lib/posts.js';
-// eslint-disable-next-line import/no-cycle
-import { getUser } from '../lib/firestore-controller.js';
 
 export default () => {
   const templateInitialPage = document.createElement('section');
@@ -39,7 +37,7 @@ export default () => {
 
   templateInitialPage.classList.add('position');
   templateInitialPage.innerHTML = viewInitialPage;
- 
+
   showPost((data, userId) => {
     setupPosts(data, userId, templateInitialPage);
   });
