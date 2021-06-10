@@ -3,7 +3,7 @@ import { registerWithGoogle } from '../lib/view-controller.js';
 
 export default () => {
   const templateHome = document.createElement('section'); // Nodo section
-  templateHome.classList.add('position');
+  templateHome.classList.add('position'); // classList es una propiedad que devuelve la clase name de un elemento. Esta propiedad es útil para añadir, eliminar y cambiar las clases CSS de un elemento. La propiedad classList es de sólo lectura, sin embargo, se puede modificar utilizando el add() y remove() métodos.
 
   const viewHome = `
   <div class="background-opacity" id="background-opacity-none">
